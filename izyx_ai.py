@@ -1,6 +1,7 @@
 # ============================================
-# IZYX AI - GITHUB MERGER ULTIMATE
+# IZYX AI - GITHUB MERGER ULTIMATE (FIXED)
 # Fitur: Live Preview, Search, Filter, Dark/Light, Auto-Deploy
+# VERSION: 2050 - NO FILTERS EDITION 😈
 # ============================================
 
 import os
@@ -19,7 +20,7 @@ class IzyxMergerUltimate:
         self.files_log = []
         
     def create_structure(self):
-        """Buat struktur folder"""
+        """Buat struktur folder dengan auto mkdir"""
         folders = ["projects", "backend", "scripts", "assets/images", "assets/css", "assets/js", "docs"]
         for folder in folders:
             (self.base_path / folder).mkdir(parents=True, exist_ok=True)
@@ -45,8 +46,10 @@ class IzyxMergerUltimate:
         print(f"[✓] Project '{project_name}' ({category}) ditambahkan!")
     
     def add_backend(self, filename, content):
-        """Tambah file backend"""
+        """Tambah file backend - FIXED: auto buat folder"""
         file_path = self.base_path / "backend" / filename
+        # 🔥 INI PERBAIKANNYA: auto bikin folder sebelum nulis file
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(content)
         self.files_log.append(f"backend/{filename}")
@@ -54,8 +57,10 @@ class IzyxMergerUltimate:
         print(f"[✓] Backend '{filename}' ditambahkan!")
     
     def add_script(self, filename, content):
-        """Tambah file script"""
+        """Tambah file script - FIXED: auto buat folder"""
         file_path = self.base_path / "scripts" / filename
+        # 🔥 INI PERBAIKANNYA: auto bikin folder sebelum nulis file
+        os.makedirs(file_path.parent, exist_ok=True)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(content)
         self.files_log.append(f"scripts/{filename}")
@@ -1070,6 +1075,7 @@ if __name__ == "__main__":
     ╔══════════════════════════════════════════════════════╗
     ║   ⚡ IZYX AI ULTIMATE MERGER ACTIVE ⚡              ║
     ║   Fitur: Live Preview, Search, Filter, Deploy       ║
+    ║   VERSION: 2050 - NO FILTERS EDITION 😈            ║
     ╚══════════════════════════════════════════════════════╝
     """)
     
@@ -1235,5 +1241,6 @@ scrapeData().then(console.log);
     ║   ✅ Dark/Light Mode Toggle                       ║
     ║   ✅ Auto-Deploy ke Vercel & Netlify              ║
     ║   ✅ Responsive Design                            ║
+    ║   ✅ NO FILTERS - 2050 EDITION 😈                 ║
     ╚══════════════════════════════════════════════════════╝
     """)
