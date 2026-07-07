@@ -173,4 +173,4 @@ MIT License — Bebas untuk penggunaan pribadi dan komersial.
 
 ---
 
-**Made with 🔥 by IZYX AI — 2050**
+**Made with 🔥 by IZYX AI**
