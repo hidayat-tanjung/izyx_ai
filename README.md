@@ -459,12 +459,6 @@ Jika ada masalah atau pertanyaan:
 
 ---
 
-**Made with 🔥 by IZYX AI**
-
-*Transforming project management with AI vibes since 2024*
-
----
-
 ## Version History
 
 ### v2.0 (Current)
@@ -482,3 +476,9 @@ Jika ada masalah atau pertanyaan:
 - 3 basic templates
 - Simple dashboard
 - Basic server
+
+**Made with 🔥 by IZYX AI**
+
+***Update 07 Juli 2026, Gunungsitoli***
+
+---
